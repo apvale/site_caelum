@@ -43,6 +43,13 @@ header{
     color: #003366;
 }
 
+.menu-opcoes a:hover {
+    color: #007dc6;
+}
+.menu-opcoes a:active {
+    color: #867dc6;
+}
+
 .busca, .menu-departamentos {
     background-color: #dcdcdc;
     font-weight: bold;
@@ -51,6 +58,28 @@ header{
     margin-right: 10px;
     width: 230px;
 }
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before {
+    content: '- ';
+}
+
+.menu-departamentos li li a:before {
+    content: '\272A';
+    padding-right: 3px;
+}
+
 
 .destaque{
     margin-top: 10px;
@@ -189,3 +218,4 @@ footer .container {
     border-bottom: 15px solid transparent;
     border-top: 15px solid transparent;
 }
+
